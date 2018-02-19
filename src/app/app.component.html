@@ -1,0 +1,24 @@
+<select [(ngModel)]="selectedState" (ngModelChange)="onChange($event)" >
+  <option *ngFor="let c of countries" [ngValue]="c"> {{c.name}} </option>
+</select>
+<br>
+<br>
+<select >
+  <option *ngFor="let c of states" [ngValue]="c"> {{c.name}} </option>
+</select>
+
+<!-- <h4>2nd way</h4> -->
+
+<!-- <label>Country:</label> 
+<select [(ngModel)]="selectedCountry.id" (change)="onSelect($event.target.value)">
+ 
+  <option *ngFor="let country of _countries" [ngValue]= "country.id">{{country.name}}</option>
+</select>
+<br/><br/>
+<div>
+<label>State:</label>
+<select>
+  
+  <option *ngFor="let state of _states " value= {{state.id}}>{{state.name}}</option>
+</select>
+</div> -->
